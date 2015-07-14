@@ -20,7 +20,6 @@ execute 'npm install gulp -g' do
 end
 execute "npm-install" do
   cwd "/vagrant"
-  command "npm install --no-bin-links"
-  user "vagrant"
+  command "sudo npm install --no-bin-links"
   action :run
 end
